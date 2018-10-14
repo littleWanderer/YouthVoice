@@ -19,30 +19,37 @@
 
 <body>
 
-    <div class="container">
-        <header>
-            <img src="assets/images/logo.png" class="logo">
+    <div class="content_container" >
+        <header style="height:10%">
+            <a href="home.html"><image src="assets/images/logo.png" class="logo" /></a>
             <ul>
-                <li><a>Početna</a></li>
-                <li><a>Problemi</a></li>
-                <button id="post_question" class="btn btn-outline-light">Pitaj</button>
+                <li><a style="color:#d66d58" href="problems.html">Problemi</a></li>
+                <button id="post_question" class="btn btn-outline-light button-light">Pitaj</button>
             </ul>
-        </header>
+        </header> 
 
-        <div class="content_wrapper allProblems" style="left:35%">
-            <div class="col-12" id="allProblems">
-                <div id="col-12 card_" class="cardsForProblems">
+        <div class="content_wrapper allProblems container">
+            <div class="row" id="allProblems" style="text-align: center">
+                <div id="card_" class="col-5 cardsForProblems">
                     <div class="card-upper">
-                        <h5>Naziv problema</h5>
-                        <p>Opis problema</p>
-                        <div class="col-12">
-                            <div class="row author_icon">
-                                <a href="#" id="likeBtn"> <i class="far fa-thumbs-up"></i></a> 5236 glasova
-                                <h6>Autor: Kale</h6>
-                            </div>
-                        </div>
+                        <h5>Ne zanima me politika ni stanje u zemlji</h5>
+                        <p>Loše kampanje i prazna obećanja od strane političkih kandidata su glavni razlog zašto niko od kandidata nije bio moj izbor</p>
+                        <a href="#" id="likeBtn"> <i class="far fa-thumbs-up"></i></a> 56 glasova
+                        <h6 style="display: inline; float:right">kattim95</h6>  
                     </div>
                 </div>
+                <div id="card_" class="cardsForProblems col-5 offset-7 " style="float:right">
+                    <div class="card-upper">
+                        <h5>Političke kampanje nisu dovoljno ubedljive</h5>
+                        <p>Loše kampanje i prazna obećanja od strane političkih kandidata su glavni razlog zašto niko od kandidata nije bio moj izbor</p>
+                        
+                        <a href="#" id="likeBtn"> <i class="far fa-thumbs-up"></i></a>36 glasova
+                         <h6 style="display: inline; float:right">team95</h6>
+                             
+                        
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>

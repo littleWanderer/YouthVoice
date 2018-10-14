@@ -10,7 +10,15 @@ $(document).ready(function(){
 		$('#register_link').css('display', 'none');
 
 
+
+
 	})
+
+	$('#register_form').submit(function(e){
+		e.preventDefault();
+        e.stopPropagation();
+		window.location.href='problems.html';
+	});
 
 
 

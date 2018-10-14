@@ -10,6 +10,8 @@ $(document).ready(function(){
 		e.preventDefault();
         e.stopPropagation();
 
+        window.location.href = "problems.html";
+        /*
 		var user=$('#username').val().trim();
 		var pass=$('#password').val().trim();
 
@@ -36,19 +38,18 @@ $(document).ready(function(){
 			  	form.reset();
 
 
-			  	sessionStorage.setItem('token', resp.data.token);
-			  	console.log(resp.data.token);
+			  	
 
-	  			window.location.href = "home.html";
+	  			
 			  		
 			  },
 			  error: function(){
 			  	alert('Greška prilikom logovanja na sistem!');
 			  }
 
+			  
 
-
-		});
+		});*/
 
 
 
