@@ -11,3 +11,15 @@
 		transform: translate(-50%, -50%);
 	}
 }
+
+
+.relative {
+	position: relative;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
