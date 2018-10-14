@@ -22,12 +22,12 @@ $(document).ready(function(){
 
     $('#add_subject_modal').modal('show');
     
-    $('#post_question').on('click', function(){
+   $('#post_question').on('click', function(){
     	$('#add_subject_modal').modal('show');
 
      })
-    
-    const URLallProblems="http://127.0.0.1:9006/potentialproblems/returnAll";
+/*  
+   const URLallProblems="http://127.0.0.1:9006/potentialproblems/returnAll";
 
 		$.ajax({
 			  headers: { 
@@ -52,28 +52,29 @@ $(document).ready(function(){
 			  }
 
 
-    });
+    }); */
 
     $('.allProblems').on('click', '.likeBtn', function(){
         
 
-		var id = $(this).parent().parent().parent().parent().attr('id').split('_')[1];
+		var id = $(this).parent().parent().attr('id').split('_')[1];
         console.log(id);
         console.log("#likeBtn_"+id+".i")
         $("#likeBtn_"+id).children().removeClass('far fa-thumbs-up').addClass('fas fa-thumbs-up clickedBtnChangeColor');
         $("#likeBtn_"+id).addClass("clicked");
+       
 
     });
 
     $('.allProblems').on('click', '.clicked', function(){
-        alert("usao");
-		var id = $(this).parent().parent().parent().parent().attr('id').split('_')[1];
+		var id = $(this).parent().parent().attr('id').split('_')[1];
         console.log(id);
         console.log("#likeBtn_"+id+".i");
         $("#likeBtn_"+id).children().removeClass('fas fa-thumbs-up clickedBtnChangeColor').addClass('far fa-thumbs-up');
         $("#likeBtn_"+id).removeClass("clicked");
+        
 
-    } );
+    });
     
 
 });
