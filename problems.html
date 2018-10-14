@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Potential Problems</title>
+
+    <link rel="stylesheet" type="text/css" href="style/css/index.css">
+    <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <img src="assets/images/logo.png" class="logo">
+            <ul>
+                <li><a>Početna</a></li>
+                <li><a>Problemi</a></li>
+                <button id="post_question" class="btn btn-outline-light">Pitaj</button>
+            </ul>
+        </header>
+
+        <div class="content_wrapper allProblems" style="left:35%">
+            <div class="col-12" id="allProblems">
+                <div id="col-12 card_" class="cardsForProblems">
+                    <div class="card-upper">
+                        <h5>Naziv problema</h5>
+                        <p>Opis problema</p>
+                        <div class="col-12">
+                            <div class="row author_icon">
+                                <a href="#" id="likeBtn"> <i class="far fa-thumbs-up"></i></a> 5236 glasova
+                                <h6>Autor: Kale</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" role="dialog" id="add_subject_modal">
+            <div class="modal-dialog">
+                <form id="subject_form" method="post">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal_heading">Dodaj novi problem</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+    
+                        <div class="container main-modal-content">
+                            <div class="row align-items-center">
+                                <div class="col-12">
+                                    <label>Problemi za koje trenutno postoji rešenje</label>
+                                </div>
+                                <div class="col-12">
+                                        <select name="problems" title="problems" class="select_field literatureCB" id="literature-2">
+                                                <option selected="selected" value="selected">Pogledaj probleme</option>
+                                            </select>
+                                </div>
+    
+                                <div class="col-12">
+                                    <label>Naziv tvog problema</label>
+                                </div>
+                                <div class="col-12">
+                                    <input name="problem_name" id="prob_name" type="" required>
+                                </div>
+    
+                                <div class="col-12">
+                                    <label>Kratak opis tvog problema</label>
+                                </div>
+                                <div class="col-12">
+                                        <input name="problem_name" id="prob_name" type="" required maxlength="500">
+                                </div>
+                               
+                            </div>
+    
+                        </div>
+    
+                        <div class="modal-footer" id="footer_modal">
+                            <button type="submit" class="button" form="subject_form">Submit</button>
+                            <button type="button" class="button" data-dismiss="modal">Close</button>
+                            <div id="subject_created"></div>
+    
+                        </div>
+    
+                    </div>
+    
+                </form>
+            </div>
+    
+        </div>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/problem.js"></script>
+    
+    
+
+
+
+
+</body>
+
+</html>

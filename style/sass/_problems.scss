@@ -1,0 +1,64 @@
+.allProblems{
+    top: 40%!important;
+	left: 35%!important;
+}
+.cardsForProblems{
+    background-color: rgba(75, 101, 114, 0.78);
+    width:50rem;
+    border-radius: 0.25rem;
+    height:10rem;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card-upper{
+    width:45rem;
+    height: 25rem;
+    padding: 3%;
+    text-align: left;
+}
+
+.author_icon{
+    i{
+        font-size: 1.5rem;
+    }
+    a{
+        color:black;
+        padding-right: 1%;
+    }
+    h6{
+        padding-left: 70%;
+        font-size: 1rem;
+        font-weight: inherit;
+    }
+}
+
+.main-modal-content{
+    padding-top: 2%;
+    .col-12{
+        input{
+            margin: 2% 0 2% 0;
+            border-radius: .25rem;
+            min-width: 100%;
+            min-height: 1.5rem;
+        }
+        select{
+            min-height: 1.5rem;
+            margin: 2% 0 2% 0;
+            border-radius: .25rem;
+            min-width: 100%;
+        }
+    }
+}
+.modal-header{
+    background-image: url('../../assets/images/logo.png');
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    background-position: 90%; 
+}
+#footer_modal{
+    background-color: white;
+}
+
+.main-modal-content{
+    background-color: rgba(75, 101, 114, 0.3);
+}
