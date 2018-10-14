@@ -1,0 +1,65 @@
+.content {
+	background-image: url('../../assets/images/youth_activism.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	position: relative;
+
+	
+
+}
+
+.overlay {
+		background-color: rgba(52, 73, 85, 0.77);
+		width: 100%;
+		height: 100%;
+		padding-top: 10px;
+		z-index: 0;
+		border-radius: .25rem;
+
+	}
+
+header {
+
+	background-color: transparent;
+	text-align: right;
+	padding-right: 10%;
+	padding-left: 10%;
+	z-index: 1;
+
+	.logo {
+		width: 150px;
+		height: 110px;
+		display: inline;
+		float: left;
+		z-index: 1;
+		margin-top: -25px;
+	}
+	
+	ul {
+		width: 100%;
+		margin-bottom: 0;
+		margin-top: 1rem;
+		li {
+			list-style: none;
+			display: inline;
+			margin-right: 20px;
+			color: white;
+			a {
+				font-weight: 600;
+			}
+
+		}
+		button {
+			display: inline;
+			font-weight: 600!important;
+			width: 120px;
+			height: 40px;
+		}
+
+		
+	}
+}
+
+

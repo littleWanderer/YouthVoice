@@ -1,0 +1,34 @@
+.values {
+
+	height: 20%;
+	border-radius: .25rem;
+	position: fixed!important;
+	bottom: 5!important;
+	
+	.row {
+		height: 100%;
+			.value_card{
+				box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+				border-radius: .25rem;
+				text-align: center;
+				z-index: 2;
+				position: relative;
+				background-color: rgba(75, 101, 114, 0.78);
+				.card_content{
+					position: absolute;
+					top:50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					h6 {
+						color: white;
+					}
+					i {
+						color: $secondary-orange;
+					}
+
+				}
+			}
+	}
+
+	
+}

@@ -1,0 +1,78 @@
+@mixin placeholder-color($color) {
+  &::-webkit-input-placeholder { /* WebKit browsers */
+      color: $color;
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: $color;
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: $color;
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: $color;
+  }
+}
+
+.content_container {
+	padding-top: 10px;
+	width: 100%;
+	height: 100%;
+
+	footer {
+		position: fixed;
+		bottom: 0;
+		text-align: center;
+		width: 100%;
+
+	}
+
+}
+
+
+.image_wrapper {
+	background-image: url('../../assets/images/youth_activism.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	height: 90%;
+}
+
+#login-form, #register-form{
+	z-index: 1;
+	input {
+		@include placeholder-color(white);
+	}
+}
+
+
+
+.content_wrapper{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+
+	input {
+		border-color: $secondary-orange;
+		background-color: transparent;
+	}
+
+	p {
+		color: white;
+		margin-top: 10px;
+		a {
+			color: $secondary-orange;
+
+		}
+	}
+
+}
+
+
+#register_form {
+	display: none;
+
+}
