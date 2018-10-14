@@ -345,3 +345,7 @@ header ul button {
 .modal-title {
   color: #232F34 !important;
 }
+
+.clickedBtnChangeColor {
+  color: #d66d58;
+}

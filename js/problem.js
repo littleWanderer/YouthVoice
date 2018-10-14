@@ -9,7 +9,7 @@ function createProblemCard(data){
                    <p>${data.description}</p>
                    <div class="col-12">
                        <div class="row author_icon">
-                           <a href="#" id="likeBtn"> <i class="far fa-thumbs-up"></i></a> ${data.numOfVotes}
+                           <a href="#" id="likeBtn_${data.id}" class="likeBtn"> <i class="far fa-thumbs-up"></i></a> ${data.numOfVotes}
                            <h6>${data.userEntity.username}</h6>
                        </div>
                    </div>
@@ -46,10 +46,28 @@ $(document).ready(function(){
 			  }
 
 
+    });
 
-	
+    $('.allProblems').on('click', '.likeBtn', function(){
+        
 
+		var id = $(this).parent().parent().parent().parent().attr('id').split('_')[1];
+        console.log(id);
+        console.log("#likeBtn_"+id+".i")
+        $("#likeBtn_"+id).children().removeClass('far fa-thumbs-up').addClass('fas fa-thumbs-up clickedBtnChangeColor');
+        $("#likeBtn_"+id).addClass("clicked");
 
+    });
 
-	});
+    $('.allProblems').on('click', '.clicked', function(){
+        alert("usao");
+		var id = $(this).parent().parent().parent().parent().attr('id').split('_')[1];
+        console.log(id);
+        console.log("#likeBtn_"+id+".i");
+        $("#likeBtn_"+id).children().removeClass('fas fa-thumbs-up clickedBtnChangeColor').addClass('far fa-thumbs-up');
+        $("#likeBtn_"+id).removeClass("clicked");
+
+    } );
+    
+
 });
